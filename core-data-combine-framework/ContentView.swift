@@ -8,14 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var viewContext
+    @EnvironmentObject var taskListVM:TaskListViewModel
+    @FetchRequest(entity: TaskList.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: true)]) var fetchedTaskList:FetchedResults<TaskList>
+    @State private var addView = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            VStack{
+                List{
+                    ForEach(fetchedTaskList){ item in
+                        TaskListCell(taskListItem: item)
+                    }
+                }
+            }
+            .sheet(isPresented: $addView, content: {
+                AddListView(addView: $addView)
+                    .environmentObject(taskListVM)
+            })
+            .navigationTitle("Core Data Memo")
+            .navigationBarItems(trailing:
+                 addView ?
+                    nil : Button(action:{
+                        addView.toggle()
+                    }){
+                        Label("Add Item", systemImage: "plus")
+                    }
+            )
         }
-        .padding()
     }
 }
 

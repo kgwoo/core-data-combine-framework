@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47A92FA728E40C5A00FFC86D /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A92FA628E40C5A00FFC86D /* TaskListCell.swift */; };
 		47ECA62B28E3E91400CF15F8 /* core_data_combine_frameworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ECA62A28E3E91400CF15F8 /* core_data_combine_frameworkApp.swift */; };
 		47ECA62D28E3E91400CF15F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ECA62C28E3E91400CF15F8 /* ContentView.swift */; };
 		47ECA62F28E3E91400CF15F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ECA62E28E3E91400CF15F8 /* Assets.xcassets */; };
 		47ECA63328E3E91400CF15F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ECA63228E3E91400CF15F8 /* Preview Assets.xcassets */; };
+		47ECA63B28E3E99500CF15F8 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47ECA63928E3E99500CF15F8 /* CoreData.xcdatamodeld */; };
+		47ECA63D28E3EA6A00CF15F8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ECA63C28E3EA6A00CF15F8 /* Persistence.swift */; };
+		47ECA63F28E3EC7000CF15F8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ECA63E28E3EC7000CF15F8 /* TaskListViewModel.swift */; };
+		47ECA64128E3EE3D00CF15F8 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ECA64028E3EE3D00CF15F8 /* AddListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47A92FA628E40C5A00FFC86D /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
 		47ECA62728E3E91400CF15F8 /* core-data-combine-framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "core-data-combine-framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ECA62A28E3E91400CF15F8 /* core_data_combine_frameworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = core_data_combine_frameworkApp.swift; sourceTree = "<group>"; };
 		47ECA62C28E3E91400CF15F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47ECA62E28E3E91400CF15F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47ECA63028E3E91400CF15F8 /* core_data_combine_framework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = core_data_combine_framework.entitlements; sourceTree = "<group>"; };
 		47ECA63228E3E91400CF15F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47ECA63A28E3E99500CF15F8 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		47ECA63C28E3EA6A00CF15F8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		47ECA63E28E3EC7000CF15F8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		47ECA64028E3EE3D00CF15F8 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 			children = (
 				47ECA62A28E3E91400CF15F8 /* core_data_combine_frameworkApp.swift */,
 				47ECA62C28E3E91400CF15F8 /* ContentView.swift */,
+				47ECA64028E3EE3D00CF15F8 /* AddListView.swift */,
+				47ECA63E28E3EC7000CF15F8 /* TaskListViewModel.swift */,
+				47ECA63C28E3EA6A00CF15F8 /* Persistence.swift */,
+				47A92FA628E40C5A00FFC86D /* TaskListCell.swift */,
+				47ECA63928E3E99500CF15F8 /* CoreData.xcdatamodeld */,
 				47ECA62E28E3E91400CF15F8 /* Assets.xcassets */,
 				47ECA63028E3E91400CF15F8 /* core_data_combine_framework.entitlements */,
 				47ECA63128E3E91400CF15F8 /* Preview Content */,
@@ -139,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A92FA728E40C5A00FFC86D /* TaskListCell.swift in Sources */,
 				47ECA62D28E3E91400CF15F8 /* ContentView.swift in Sources */,
+				47ECA63D28E3EA6A00CF15F8 /* Persistence.swift in Sources */,
+				47ECA64128E3EE3D00CF15F8 /* AddListView.swift in Sources */,
+				47ECA63F28E3EC7000CF15F8 /* TaskListViewModel.swift in Sources */,
+				47ECA63B28E3E99500CF15F8 /* CoreData.xcdatamodeld in Sources */,
 				47ECA62B28E3E91400CF15F8 /* core_data_combine_frameworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +299,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -317,7 +337,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -354,6 +374,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		47ECA63928E3E99500CF15F8 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47ECA63A28E3E99500CF15F8 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 47ECA63A28E3E99500CF15F8 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 47ECA61F28E3E91300CF15F8 /* Project object */;
 }
